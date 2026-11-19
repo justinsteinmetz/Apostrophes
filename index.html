@@ -52,11 +52,11 @@ h3{font-size:1.7rem;line-height:1.1}
 .slip::before{content:"";position:absolute;top:-12px;left:50%;width:100px;height:28px;background:var(--tape);transform:translateX(-50%) rotate(var(--t,2deg));z-index:2}
 .slip:hover,.slip:focus-visible{transform:rotate(0deg) translateY(-4px)}
 .slip:focus-visible{outline:3px solid var(--teal);outline-offset:6px}
-.slip .in{display:block;background:var(--paper2);padding:2.2rem 1.8rem 1.8rem;clip-path:var(--torn);font-size:1.4rem;line-height:2.3}
+.slip .in{display:block;background:var(--paper2);padding:2.2rem 1.8rem 1.8rem;clip-path:var(--torn);font-size:1.4rem;line-height:1.55}
 .slip .n{font-family:var(--display);color:var(--red);font-size:1.6rem;margin-right:.7rem}
-.err{position:relative;display:inline-block}
+.err{position:relative;display:inline-block;padding-top:1.25em;margin-top:-.1em}
 .slip.open .err{color:var(--red);text-decoration:line-through;text-decoration-thickness:3px}
-.slip.open .err::before{content:attr(data-fix);position:absolute;left:50%;top:-1.25em;transform:translateX(-50%) rotate(-4deg);font-family:var(--hand);font-weight:700;font-size:1.35em;color:var(--red);white-space:nowrap;text-decoration:none}
+.slip.open .err::before{content:attr(data-fix);position:absolute;left:50%;top:-.05em;transform:translateX(-50%) rotate(-4deg);font-family:var(--hand);font-weight:700;font-size:1.2em;line-height:1;color:var(--red);white-space:nowrap;text-decoration:none}
 .slip .why{display:none;font-family:var(--hand);font-weight:700;font-size:1.55rem;line-height:1.15;color:var(--red);margin-top:.7rem}
 .slip.open .why{display:block}
 .slip .stamp{display:none;font-family:var(--display);color:var(--teal);font-size:1.25rem;letter-spacing:.05em;border:3px solid var(--teal);padding:.05rem .6rem;transform:rotate(-4deg);margin-top:.6rem;width:fit-content}
